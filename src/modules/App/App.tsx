@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import styled, { css } from 'styled-components';
+import get from 'lodash/fp/get';
 import '../../modules/Common/styles/reset.css';
 import './styles/index.css';
 
@@ -78,11 +79,11 @@ const Wrapper = styled('div')`
   z-index: 1;
 `;
 
-const Story = styled('div')<{ nbItemsDisplayed: number }>`
-  ${({ nbItemsDisplayed }) => css`
-    transform: translateY(-${nbItemsDisplayed * 130}px);
-    padding: 5px;
-    margin: 100px auto 0;
+const Story = styled('div')<{ offset: number }>`
+  ${({ offset }) => css`
+    transform: translateY(-${offset}px);
+    padding: 10px;
+    margin: 60% auto 0;
     transition: transform 800ms;
     max-width: 500px;
   `}
@@ -93,11 +94,11 @@ const Bubble = styled(`div`)<{ type: 'from' | 'to'; mainColor: string }>`
     position: relative;
     padding: 15px 30px;
     border-radius: 25px;
-    max-width: 350px;
+    max-width: 60%;
     font-family: Arial;
     letter-spacing: 0.02em;
     /* https://css-tricks.com/snippets/css/fluid-typography/ */
-    font-size: calc(24px + (30 - 24) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(18px + (30 - 18) * ((100vw - 300px) / (1600 - 300)));
     line-height: 1.2;
     font-weight: normal;
     margin-bottom: 5px;
@@ -106,6 +107,7 @@ const Bubble = styled(`div`)<{ type: 'from' | 'to'; mainColor: string }>`
     word-break: break-word;
     hyphens: auto;
     white-space: pre-wrap;
+    text-align: left;
 
     &::before {
       content: '';
@@ -129,7 +131,6 @@ const Bubble = styled(`div`)<{ type: 'from' | 'to'; mainColor: string }>`
       css`
         color: #333;
         background: #fff;
-        text-align: left;
         float: left;
 
         &::before {
@@ -140,7 +141,6 @@ const Bubble = styled(`div`)<{ type: 'from' | 'to'; mainColor: string }>`
       `}
     ${type === 'to' &&
       css`
-        text-align: right;
         color: #fff;
         background: ${mainColor};
         float: right;
@@ -173,13 +173,15 @@ const Spacer = styled('div')<{ type: 'from' | 'to' }>`
 `;
 
 const App = () => {
+  const story = useRef(null);
   const [counter, setCounter] = useState(0);
   const increment = () => setCounter(counter + 1);
+
   return (
     <Layout backgroundImage={backgroundImage} backgroundColor={backgroundColor}>
       <Title>{title}</Title>
       <Wrapper>
-        <Story nbItemsDisplayed={counter}>
+        <Story offset={get('current.offsetHeight')(story) || 0} ref={story}>
           {bubbles
             .filter((bubble: any, i: number) => i <= counter)
             .map((bubble: any, i: number) => (
@@ -187,7 +189,9 @@ const App = () => {
                 <Bubble key={`bubble_${i}`} type={bubble.type} mainColor={mainColor}>
                   {bubble.message}
                 </Bubble>
-                <Spacer type={bubble.type}>{bubble.name}</Spacer>
+                <Spacer key={`spacer_${i}`} type={bubble.type}>
+                  {bubble.name}
+                </Spacer>
               </>
             ))}
         </Story>
