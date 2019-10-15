@@ -83,9 +83,9 @@ const Story = styled('div')<{ offset: number }>`
   ${({ offset }) => css`
     transform: translateY(-${offset}px);
     padding: 10px;
-    margin: 60% auto 0;
+    margin: 60vh auto 0;
     transition: transform 800ms;
-    max-width: 500px;
+    max-width: 600px;
   `}
 `;
 
