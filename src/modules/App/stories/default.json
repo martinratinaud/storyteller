@@ -1,0 +1,23 @@
+{
+  "theme": {
+    "backgroundImage": "https://hooked.co/images/xbg-default.jpg.pagespeed.ic.N8zlRmG8R7.jpg",
+    "backgroundColor": "",
+    "mainColor": "#567409"
+  },
+  "story": {
+    "title": "Learning is caring",
+    "bubbles": [
+      { "type": "from", "name": "Martin", "message": "Hi there" },
+      { "type": "to", "name": "You", "message": "What is this?" },
+      { "type": "from", "name": "Martin", "message": "Actually, you were the one who installed this in the first place!" },
+      { "type": "to", "name": "You", "message": "Oh, you're right!" },
+      { "type": "to", "name": "You", "message": "So how does it work?" },
+      { "type": "from", "name": "Martin", "message": "Glad you asked!" },
+      { "type": "from", "name": "Martin", "message": "Copy the `default.json` file in `src/modules/App/stories` and make your own" },
+      { "type": "from", "name": "Martin", "message": "And conquer the world!" }
+    ]
+  },
+  "finish": {
+    "title": "Martin Ratinaud"
+  }
+}

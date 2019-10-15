@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+src/modules/App/stories/*.json
+!src/modules/App/stories/default.json
