@@ -5,7 +5,7 @@
     "mainColor": "#987121"
   },
   "story": {
-    "title": "Hire Martin",
+    "title": "Who is your next teammate?",
     "bubbles": [
       { "type": "from", "name": "Unknown", "message": "Hi" },
       { "type": "to", "name": "You", "message": "Who is this?" },

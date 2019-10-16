@@ -36,6 +36,7 @@ const FinalCardContainer = styled('div')`
 const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const increment: () => void = useCallback(() => setCurrentIndex(currentIndex + 1), [currentIndex]);
+  const isStoryFinished = currentIndex === nbBubbles;
 
   const onSpacePress = useCallback(
     event => {
@@ -55,12 +56,29 @@ const App = () => {
     };
   }, [onSpacePress]);
 
+  useEffect(() => {
+    if (isStoryFinished) {
+      // @ts-ignore
+      window.fcWidget.init({
+        token: '98d3abf1-4024-4a14-861d-c3144add87f7',
+        host: 'https://wchat.freshchat.com',
+        config: {
+          agent: {
+            hideName: false,
+            hideBio: false,
+            hidePic: false,
+          },
+        },
+      });
+    }
+  }, [isStoryFinished]);
+
   return (
     <Layout backgroundImage={backgroundImage} backgroundColor={backgroundColor}>
-      {currentIndex < nbBubbles && <Layout.Title>{title}</Layout.Title>}
+      {!isStoryFinished && <Layout.Title>{title}</Layout.Title>}
       <Layout.Main>
-        {currentIndex < nbBubbles && <Story bubbles={bubbles} currentIndex={currentIndex} mainColor={mainColor} />}
-        {currentIndex === nbBubbles && (
+        {!isStoryFinished && <Story bubbles={bubbles} currentIndex={currentIndex} mainColor={mainColor} />}
+        {isStoryFinished && (
           <FinalCardContainer>
             <FinalCard>
               <FinalCard.Title>{finish.title}</FinalCard.Title>
@@ -82,7 +100,7 @@ const App = () => {
           </FinalCardContainer>
         )}
       </Layout.Main>
-      {currentIndex < nbBubbles && <Layout.Footer onClick={increment}>Click or hit SPACE to go ahead</Layout.Footer>}
+      {!isStoryFinished && <Layout.Footer onClick={increment}>Click or hit SPACE to go ahead</Layout.Footer>}
     </Layout>
   );
 };
