@@ -1,8 +1,8 @@
 {
   "theme": {
-    "backgroundImage": "https://hooked.co/images/xbg-default.jpg.pagespeed.ic.N8zlRmG8R7.jpg",
+    "backgroundImage": "https://storage.googleapis.com/storage.remote-family.com/hero/hero-beach-remote-family.jpg",
     "backgroundColor": "",
-    "mainColor": "#567409"
+    "mainColor": "#0AA648"
   },
   "story": {
     "title": "Learning is caring",
@@ -18,6 +18,24 @@
     ]
   },
   "finish": {
-    "title": "Martin Ratinaud"
+    "title": "Martin Ratinaud",
+    "subtitle": "And here is a glimpse of my work and how to contact me",
+    "columns": [
+      [
+        { "icon": "", "name": "LinkedIn", "link": "https://fr.linkedin.com/in/martinratinaud" },
+        { "icon": "", "name": "Github", "link": "https://www.github.com/martinratinaud" },
+        { "icon": "", "name": "Twitter", "link": "https://www.twitter.com/martinratinaud" },
+        { "icon": "", "name": "Medium", "link": "https://www.medium.com/@martinratinaud" },
+        { "icon": "", "name": "WhatsApp", "link": "tel:+33662478230" },
+        { "icon": "", "name": "Skype", "link": "skype:martinratinaud" }
+      ],
+      [
+        { "icon": "", "name": "Work With Me Methodology", "link": "https://bit.ly/work-with-martin" },
+        { "icon": "", "name": "Remote Family", "link": "https://www.remote-family.com/" },
+        { "icon": "", "name": "Reclouder", "link": "https://www.reclouder.com/" },
+        { "icon": "", "name": "AIP.trade", "link": "https://www.aiptrade.com/" },
+        { "icon": "", "name": "KiloDays", "link": "http://www.pikilabs.com/en/journiversaire/" }
+      ]
+    ]
   }
 }
