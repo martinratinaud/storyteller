@@ -109,14 +109,12 @@ const StoryWrapper = ({ bubbles, currentIndex, mainColor, ...props }: IStoryProp
       {bubbles
         .filter((_, i: number) => i <= currentIndex)
         .map((bubble: any, i: number) => (
-          <>
-            <Bubble key={`bubble_${i}`} type={bubble.type} mainColor={mainColor}>
+          <React.Fragment key={`bubble_${i}`}>
+            <Bubble type={bubble.type} mainColor={mainColor}>
               {bubble.message}
             </Bubble>
-            <Spacer key={`spacer_${i}`} type={bubble.type}>
-              {bubble.name}
-            </Spacer>
-          </>
+            <Spacer type={bubble.type}>{bubble.name}</Spacer>
+          </React.Fragment>
         ))}
     </Story>
   );

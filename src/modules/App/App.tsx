@@ -87,7 +87,7 @@ const App = () => {
                 {finish.columns.map((column: any[]) => (
                   <Grid.Item flex="1" as={FinalCard.Ul}>
                     {column.map((line: any) => (
-                      <FinalCard.Li>
+                      <FinalCard.Li key={`li_${line.name}`}>
                         <a href={line.link} target="_blank" rel="noopener noreferrer">
                           {line.name}
                         </a>
