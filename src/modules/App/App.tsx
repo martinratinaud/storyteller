@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import styled, { css } from 'styled-components';
 
 import { Story } from 'modules/Story';
@@ -35,7 +35,25 @@ const FinalCardContainer = styled('div')`
 
 const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const increment = () => setCurrentIndex(currentIndex + 1);
+  const increment: () => void = useCallback(() => setCurrentIndex(currentIndex + 1), [currentIndex]);
+
+  const onSpacePress = useCallback(
+    event => {
+      const { keyCode } = event;
+
+      if (keyCode === 32) {
+        increment();
+      }
+    },
+    [increment]
+  );
+
+  useEffect(() => {
+    window.addEventListener('keydown', onSpacePress);
+    return () => {
+      window.removeEventListener('keydown', onSpacePress);
+    };
+  }, [onSpacePress]);
 
   return (
     <Layout backgroundImage={backgroundImage} backgroundColor={backgroundColor}>
@@ -64,7 +82,7 @@ const App = () => {
           </FinalCardContainer>
         )}
       </Layout.Main>
-      {currentIndex < nbBubbles && <Layout.Footer onClick={increment}>Click to go ahead</Layout.Footer>}
+      {currentIndex < nbBubbles && <Layout.Footer onClick={increment}>Click or hit SPACE to go ahead</Layout.Footer>}
     </Layout>
   );
 };
