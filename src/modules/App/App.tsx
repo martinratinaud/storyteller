@@ -36,7 +36,7 @@ const FinalCardContainer = styled('div')`
 const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const increment: () => void = useCallback(() => setCurrentIndex(currentIndex + 1), [currentIndex]);
-  const isStoryFinished = currentIndex === nbBubbles;
+  const isStoryFinished = currentIndex >= nbBubbles;
 
   const onSpacePress = useCallback(
     event => {

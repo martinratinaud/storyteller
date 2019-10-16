@@ -78,7 +78,11 @@ const Footer = styled('a')`
   font-size: 1.2em;
 `;
 
-const LayoutWrapper = ({ children, ...props }: ILayoutProps) => <Layout {...props}>{children}</Layout>;
+const LayoutWrapper = ({ children, backgroundImage, backgroundColor, ...props }: ILayoutProps) => (
+  <Layout backgroundImage={backgroundImage} backgroundColor={backgroundColor} {...props}>
+    {children}
+  </Layout>
+);
 
 LayoutWrapper.Title = Title;
 LayoutWrapper.Main = Main;
