@@ -2,7 +2,7 @@
   "theme": {
     "backgroundImage": "https://storage.googleapis.com/storage.remote-family.com/hero/hero-beach-remote-family.jpg",
     "backgroundColor": "",
-    "mainColor": "#987121"
+    "mainColor": "#08255b"
   },
   "story": {
     "title": "Who is your next teammate?",
@@ -18,7 +18,12 @@
       {
         "type": "from",
         "name": "Unknown",
-        "message": "He’s a full stack developer who has expatriated in Mauritius\nHis current company is running out of fund after raising 2M$\nSad story"
+        "message": "He’s a full stack developer who has expatriated in Mauritius\nHis current company is running out of fund after raising 2M$"
+      },
+      {
+        "type": "from",
+        "name": "Unknown",
+        "message": "Sad story"
       },
       { "type": "to", "name": "You", "message": "Ok and why should I care?\nWho are you anyway?I’m gonna hang up" },
 
@@ -119,15 +124,15 @@
   },
   "finish": {
     "title": "Martin Ratinaud",
-    "subtitle": "And here is a glimpse of my work and how to contact me",
+    "subtitle": "Here is a glimpse of my work and how to contact me",
     "columns": [
       [
-        { "icon": "", "name": "LinkedIn", "link": "https://fr.linkedin.com/in/martinratinaud" },
-        { "icon": "", "name": "Github", "link": "https://www.github.com/martinratinaud" },
-        { "icon": "", "name": "Twitter", "link": "https://www.twitter.com/martinratinaud" },
-        { "icon": "", "name": "Medium", "link": "https://www.medium.com/@martinratinaud" },
-        { "icon": "", "name": "WhatsApp", "link": "tel:+33662478230" },
-        { "icon": "", "name": "Skype", "link": "skype:martinratinaud" }
+        { "icon": "fab fa-linkedin", "name": "LinkedIn", "link": "https://fr.linkedin.com/in/martinratinaud" },
+        { "icon": "fab fa-github", "name": "Github", "link": "https://www.github.com/martinratinaud" },
+        { "icon": "fab fa-twitter", "name": "Twitter", "link": "https://www.twitter.com/martinratinaud" },
+        { "icon": "fab fa-medium", "name": "Medium", "link": "https://www.medium.com/@martinratinaud" },
+        { "icon": "fab fa-whatsapp", "name": "WhatsApp", "link": "tel:+33662478230" },
+        { "icon": "fab fa-skype", "name": "Skype", "link": "skype:martinratinaud" }
       ],
       [
         { "icon": "", "name": "Work With Me Methodology", "link": "https://bit.ly/work-with-martin" },

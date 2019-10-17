@@ -42,7 +42,7 @@ const Layout = styled('div')<ILayoutProps>`
 `;
 
 const Title = styled('h1')`
-  background: linear-gradient(#000 10%, transparent);
+  background: linear-gradient(#444 5%, transparent);
   color: white;
   position: fixed;
   top: 0;
@@ -76,6 +76,12 @@ const Footer = styled('a')`
   text-decoration: none;
   color: #333;
   font-size: 1.2em;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: none;
+    color: #000;
+  }
 `;
 
 const LayoutWrapper = ({ children, backgroundImage, backgroundColor, ...props }: ILayoutProps) => (

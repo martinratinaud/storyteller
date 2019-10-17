@@ -15,6 +15,7 @@ const FinalCard = styled('div')<IFinalCardProps>`
 const Title = styled('h1')`
   text-align: center;
   margin-bottom: 10px;
+  font-weight: bold;
 `;
 
 const Subtitle = styled('h2')`

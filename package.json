@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "@types/typography": "^0.16.3",
     "lodash": "^4.17.15",
     "polished": "^3.4.1",

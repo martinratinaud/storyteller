@@ -13,7 +13,7 @@ const Story = styled('div')<{ offsetHeight: number }>`
     transform: translateY(-${offsetHeight}px);
     padding: 10px;
     margin: 60vh auto 0;
-    transition: transform 800ms;
+    transition: transform 300ms;
     max-width: 600px;
   `}
 `;
@@ -22,12 +22,12 @@ const Bubble = styled(`div`)<{ type: 'from' | 'to'; mainColor?: string }>`
   ${({ type, mainColor, theme }) => css`
     position: relative;
     padding: 15px 30px;
-    border-radius: 25px;
-    max-width: 60%;
+    border-radius: 8px;
+    max-width: 70%;
     font-family: Arial;
     letter-spacing: 0.02em;
     /* https://css-tricks.com/snippets/css/fluid-typography/ */
-    font-size: calc(18px + (30 - 18) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300)));
     line-height: 1.2;
     font-weight: normal;
     margin-bottom: 5px;
