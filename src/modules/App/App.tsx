@@ -79,6 +79,32 @@ const Link = styled('a')`
   }
 `;
 
+const Progress = styled('div')<{ progress: number }>`
+  ${({ progress }) => css`
+    position: fixed;
+    height: 10px;
+    bottom: 0;
+    left: 0;
+    width: ${progress}%;
+    background: ${mainColor};
+    transition: width 200ms linear;
+  `}
+`;
+
+const ResponsiveLayoutFooter = styled(Layout.Footer)`
+  ${({ theme }) => css`
+    > span {
+      display: none;
+    }
+
+    ${theme.breakpoint('tablet')`
+      > span {
+        display: inline;
+      }
+    `}
+  `}
+`;
+
 const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const increment: () => void = useCallback(() => setCurrentIndex(currentIndex + 1), [currentIndex]);
@@ -149,12 +175,17 @@ const App = () => {
           </FinalCardContainer>
         )}
       </Layout.Main>
-      {!isStoryFinished && <Layout.Footer onClick={increment}>Click here or hit SPACE to go ahead</Layout.Footer>}
+      {!isStoryFinished && (
+        <ResponsiveLayoutFooter onClick={increment}>
+          Click here <span>or hit SPACE </span>to go ahead
+        </ResponsiveLayoutFooter>
+      )}
       {!isStoryFinished && (
         <SkipButton onClick={skip} title="hire me now and skip the story!">
           <i className="fas fa-forward" />
         </SkipButton>
       )}
+      <Progress progress={(currentIndex / nbBubbles) * 100} />
     </Layout>
   );
 };

@@ -42,15 +42,22 @@ const Layout = styled('div')<ILayoutProps>`
 `;
 
 const Title = styled('h1')`
-  background: linear-gradient(#444 5%, transparent);
-  color: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  padding: 20px;
-  z-index: 2;
+  ${({ theme }) => css`
+    background: linear-gradient(#444 5%, transparent);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 20px;
+    z-index: 2;
+    font-size: 30px;
+
+    ${theme.breakpoint('tablet')`
+      font-size: 40px;
+    `}
+  `}
 `;
 
 const Main = styled('div')`
@@ -65,23 +72,29 @@ const Main = styled('div')`
 `;
 
 const Footer = styled('a')`
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  padding: 20px;
-  z-index: 2;
-  cursor: pointer;
-  text-decoration: none;
-  color: #333;
-  font-size: 1.2em;
-  font-weight: bold;
-
-  &:hover {
+  ${({ theme }) => css`
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 20px;
+    z-index: 2;
+    cursor: pointer;
     text-decoration: none;
-    color: #000;
-  }
+    color: #333;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-size: 16px;
+
+    &:hover {
+      text-decoration: none;
+      color: #000;
+    }
+    ${theme.breakpoint('tablet')`
+      font-size: 20px;
+      `}
+  `}
 `;
 
 const LayoutWrapper = ({ children, backgroundImage, backgroundColor, ...props }: ILayoutProps) => (
