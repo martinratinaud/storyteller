@@ -132,14 +132,19 @@
         { "icon": "fab fa-twitter", "name": "Twitter", "link": "https://www.twitter.com/martinratinaud" },
         { "icon": "fab fa-medium", "name": "Medium", "link": "https://www.medium.com/@martinratinaud" },
         { "icon": "fab fa-whatsapp", "name": "WhatsApp", "link": "tel:+33662478230" },
-        { "icon": "fab fa-skype", "name": "Skype", "link": "skype:martinratinaud" }
+        { "icon": "fab fa-skype", "name": "Skype", "link": "skype:martinratinaud" },
+        {
+          "icon": "fas fa-address-card",
+          "name": "PDF Resume",
+          "link": "https://github.com/martinratinaud/work-with-me/blob/master/resume-martin-ratinaud.pdf"
+        }
       ],
       [
         { "icon": "", "name": "Work With Me Methodology", "link": "https://bit.ly/work-with-martin" },
-        { "icon": "", "name": "Remote Family", "link": "https://www.remote-family.com/" },
-        { "icon": "", "name": "Reclouder", "link": "https://www.reclouder.com/" },
-        { "icon": "", "name": "AIP.trade", "link": "https://www.aiptrade.com/" },
-        { "icon": "", "name": "KiloDays", "link": "http://www.pikilabs.com/en/journiversaire/" }
+        { "icon": "", "name": "remote-family.com (side project)", "link": "https://www.remote-family.com/" },
+        { "icon": "", "name": "reclouder.com", "link": "https://www.reclouder.com/" },
+        { "icon": "", "name": "aip.trade", "link": "https://www.aiptrade.com/" },
+        { "icon": "", "name": "KiloDays (fun tool)", "link": "http://www.pikilabs.com/en/journiversaire/" }
       ]
     ]
   }
