@@ -40,7 +40,7 @@
         "name": "Unknown",
         "message": "He may not have all those big names on his resume, I agree, but his current and former teammates all agree he’s great to work with, skilled and very creative"
       },
-      { "type": "from", "name": "Unknown", "message": "Look at his linked recommandations" },
+      { "type": "from", "name": "Unknown", "message": "Look at his LinkedIn recommandations" },
       { "type": "to", "name": "You", "message": "No kidding, like half of the resumes I get" },
       { "type": "from", "name": "Unknown", "message": "Let me tell you" },
       { "type": "from", "name": "Unknown", "message": "You need skills in React" },
