@@ -7,28 +7,28 @@
   "story": {
     "title": "Who is your next teammate?",
     "bubbles": [
-      { "type": "from", "name": "Unknown", "message": "Hi" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "Hi" },
       { "type": "to", "name": "You", "message": "Who is this?" },
-      { "type": "from", "name": "Unknown", "message": "You don’t know me but I have important news to give you" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "You don’t know me but I have important news to give you" },
       { "type": "to", "name": "You", "message": "Is this a Joke?" },
 
-      { "type": "from", "name": "Unknown", "message": "No, fortunately for you" },
-      { "type": "from", "name": "Unknown", "message": "Martin Ratinaud is looking for a job" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "No, fortunately for you" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "Martin Ratinaud is looking for a job" },
       { "type": "to", "name": "You", "message": "What?\nWho is this?" },
       {
         "type": "from",
-        "name": "Unknown",
+        "name": "+33662478230~Unknown",
         "message": "He’s a full stack developer who has expatriated in Mauritius\nHis current company is running out of fund after raising 2M$"
       },
       {
         "type": "from",
-        "name": "Unknown",
+        "name": "+33662478230~Unknown",
         "message": "Sad story"
       },
       { "type": "to", "name": "You", "message": "Ok and why should I care?\nWho are you anyway?I’m gonna hang up" },
 
-      { "type": "from", "name": "Unknown", "message": "You’re gonna like what comes next" },
-      { "type": "from", "name": "Unknown", "message": "He’s surely the guy you’re looking for" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "You’re gonna like what comes next" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "He’s surely the guy you’re looking for" },
       {
         "type": "to",
         "name": "You",
@@ -37,89 +37,109 @@
       { "type": "to", "name": "You", "message": "I don’t have time for this." },
       {
         "type": "from",
-        "name": "Unknown",
+        "name": "+33662478230~Unknown",
         "message": "He may not have all those big names on his resume, I agree, but his current and former teammates all agree he’s great to work with, skilled and very creative"
       },
-      { "type": "from", "name": "Unknown", "message": "Look at his LinkedIn recommandations" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "Look at his LinkedIn recommandations" },
       { "type": "to", "name": "You", "message": "No kidding, like half of the resumes I get" },
-      { "type": "from", "name": "Unknown", "message": "Let me tell you" },
-      { "type": "from", "name": "Unknown", "message": "You need skills in React" },
-      { "type": "from", "name": "Unknown", "message": "He has created 3 web platforms over the past 3 years. From scratch." },
-      { "type": "from", "name": "Unknown", "message": "First is a social network for artists to get the money they deserve from their creation." },
-      { "type": "from", "name": "Unknown", "message": "They got 50000 artists" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "Let me tell you" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "You need skills in React" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "He has created 3 web platforms over the past 3 years. From scratch." },
+      {
+        "type": "from",
+        "name": "+33662478230~Unknown",
+        "message": "First is a social network for artists to get the money they deserve from their creation."
+      },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "They got 50000 artists" },
       { "type": "to", "name": "You", "message": "That’s fair for artists but not a lot of trend" },
-      { "type": "from", "name": "Unknown", "message": "Second is a trading platform for royalties" },
-      { "type": "from", "name": "Unknown", "message": "They have sold 300k$ of copyrights and first royalty payment has just been made" },
-      { "type": "from", "name": "Unknown", "message": "The guy even owns 1% of the latest « Father of Chinese rock »’s song!" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "Second is a trading platform for royalties" },
+      {
+        "type": "from",
+        "name": "+33662478230~Unknown",
+        "message": "They have sold 300k$ of copyrights and first royalty payment has just been made"
+      },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "The guy even owns 1% of the latest « Father of Chinese rock »’s song!" },
       { "type": "to", "name": "You", "message": "Ok Nice, he likes music then" },
       {
         "type": "from",
-        "name": "Unknown",
+        "name": "+33662478230~Unknown",
         "message": "Yes but his guitar skills are pretty low. He hardly plays « Layla » and « Nothing else Matters »"
       },
       { "type": "to", "name": "You", "message": "He needs practice :-)" },
       {
         "type": "from",
-        "name": "Unknown",
+        "name": "+33662478230~Unknown",
         "message": "This, of course, has been developed with microservices interconnected with gRPC and deployed on Google Cloud services"
       },
-      { "type": "from", "name": "Unknown", "message": "And it uses real time updates with RabbitMQ and graphQL subscriptions" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "And it uses real time updates with RabbitMQ and graphQL subscriptions" },
       { "type": "to", "name": "You", "message": "Ok, that’s the kind of technology we could use" },
-      { "type": "from", "name": "Unknown", "message": "Right, you begin to see where I’m going" },
-      { "type": "from", "name": "Unknown", "message": "The third project is the last tool artist will ever need to record their live sessions" },
-      { "type": "from", "name": "Unknown", "message": "It’s live on IndieGogo now and it is called the Reclouder" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "Right, you begin to see where I’m going" },
+      {
+        "type": "from",
+        "name": "+33662478230~Unknown",
+        "message": "The third project is the last tool artist will ever need to record their live sessions"
+      },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "It’s live on IndieGogo now and it is called the Reclouder" },
       { "type": "to", "name": "You", "message": "Reclouder…" },
-      { "type": "from", "name": "Unknown", "message": "Recorder in the cloud" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "Recorder in the cloud" },
       { "type": "to", "name": "You", "message": "Thanks for the explanation….." },
-      { "type": "from", "name": "Unknown", "message": "Ok Sorry" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "Ok Sorry" },
       {
         "type": "to",
         "name": "You",
         "message": "Ok, he’s skilled, he can build stuff, like anybody who applies to this job, what makes him a unique fit"
       },
-      { "type": "from", "name": "Unknown", "message": "Glad you asked" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "Glad you asked" },
       {
         "type": "from",
-        "name": "Unknown",
+        "name": "+33662478230~Unknown",
         "message": "For all these projects, he’s been part of the product creation, the planning making and has supervised 3 senior developers (1 iOS, 1 Android and 1 Fullstack)"
       },
-      { "type": "from", "name": "Unknown", "message": "Also, You’re looking for remote right" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "Also, You’re looking for remote right" },
       { "type": "to", "name": "You", "message": "Yes" },
-      { "type": "from", "name": "Unknown", "message": "He’s been working remotely for 3 years." },
-      { "type": "from", "name": "Unknown", "message": "His team is spread across Europe, Asia and US, surely like yours, so he knows the drill." },
-      { "type": "from", "name": "Unknown", "message": "He was in France first and then expatriated with his whole family to Mauritius" },
-      { "type": "to", "name": "You", "message": "Mauritius, lucky him!" },
-      { "type": "from", "name": "Unknown", "message": "That’s for sure, but do you know how he found where to go?" },
-      { "type": "to", "name": "You", "message": "Is this relevant to our conversation?" },
-      { "type": "from", "name": "Unknown", "message": "Yes :-)" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "He’s been working remotely for 3 years." },
       {
         "type": "from",
-        "name": "Unknown",
+        "name": "+33662478230~Unknown",
+        "message": "His team is spread across Europe, Asia and US, surely like yours, so he knows the drill."
+      },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "He was in France first and then expatriated with his whole family to Mauritius" },
+      { "type": "to", "name": "You", "message": "Mauritius, lucky him!" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "That’s for sure, but do you know how he found where to go?" },
+      { "type": "to", "name": "You", "message": "Is this relevant to our conversation?" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "Yes :-)" },
+      {
+        "type": "from",
+        "name": "+33662478230~Unknown",
         "message": "He wanted a place where he could surf and where his wife and kids could practice their favorite sport - horse riding - while learning english"
       },
       { "type": "to", "name": "You", "message": "Not easy to find indeed" },
-      { "type": "from", "name": "Unknown", "message": "That’s why he created a website to find it" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "That’s why he created a website to find it" },
       { "type": "to", "name": "You", "message": "really?" },
-      { "type": "from", "name": "Unknown", "message": "Yes." },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "Yes." },
       {
         "type": "from",
-        "name": "Unknown",
+        "name": "+33662478230~Unknown",
         "message": "As a side project, he built https://www.remote-family.com and found out his sweet spot would be in Tamarin, Mauritius"
       },
       { "type": "to", "name": "You", "message": "Ok, the guy knows what he wants" },
-      { "type": "from", "name": "Unknown", "message": "Indeed!" },
-      { "type": "from", "name": "Unknown", "message": "And finally one last thing" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "Indeed!" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "And finally one last thing" },
       { "type": "to", "name": "You", "message": "Yes" },
-      { "type": "from", "name": "Unknown", "message": "He’s run his own company of 12 people during 7 years and sold it in 2014." },
-      { "type": "from", "name": "Unknown", "message": "You need entrepreneurship spirit, autonomy and a sharp and concise way of solving problems" },
-      { "type": "from", "name": "Unknown", "message": "The guy seems to have done that all his career" },
-      { "type": "from", "name": "Unknown", "message": "You’re served" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "He’s run his own company of 12 people during 7 years and sold it in 2014." },
+      {
+        "type": "from",
+        "name": "+33662478230~Unknown",
+        "message": "You need entrepreneurship spirit, autonomy and a sharp and concise way of solving problems"
+      },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "The guy seems to have done that all his career" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "You’re served" },
       { "type": "to", "name": "You", "message": "Ok that looks nice, I will contact him then" },
       { "type": "to", "name": "You", "message": "Now is my time to ask one question" },
-      { "type": "from", "name": "Unknown", "message": "Sure" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "Sure" },
       { "type": "to", "name": "You", "message": "Who are you?" },
-      { "type": "from", "name": "Unknown", "message": "Well" },
-      { "type": "from", "name": "Unknown", "message": "I’m" }
+      { "type": "from", "name": "+33662478230~Unknown", "message": "Well" },
+      { "type": "from", "name": "+33662478230~Unknown", "message": "I’m" }
     ]
   },
   "finish": {
