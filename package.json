@@ -5,7 +5,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",
     "@types/typography": "^0.16.3",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "polished": "^3.4.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
